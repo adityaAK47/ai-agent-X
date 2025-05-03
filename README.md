@@ -9,6 +9,31 @@ This project consists of a client-server architecture with separate components f
 - Real-time content generation
 - User-friendly interface
 
+## Technologies Used
+
+### Frontend
+- React.js - Modern UI library for building user interfaces
+- Material-UI - Component library for consistent design
+- Redux - State management
+- Axios - HTTP client for API requests
+- Socket.io-client - Real-time communication
+
+### Backend
+- Node.js - Runtime environment
+- Express.js - Web framework
+- OpenAI API - AI content generation
+- Twitter API - Social media integration
+- Socket.io - Real-time bidirectional communication
+- MongoDB - Database for storing user data and post history
+- JWT - Authentication and authorization
+
+### Development Tools
+- Git - Version control
+- npm - Package management
+- ESLint - Code linting
+- Jest - Testing framework
+- Docker - Containerization
+
 ## Project Structure
 
 ```
@@ -25,6 +50,8 @@ mcp-server/
 - Node.js (version 14 or higher recommended)
 - npm or yarn package manager
 - Twitter Developer Account (for API access)
+- OpenAI API Key
+- MongoDB instance
 
 ### Installation
 
@@ -48,14 +75,24 @@ npm install
 
 ### Configuration
 
-1. Set up your Twitter API credentials:
+1. Set up your environment variables:
    - Create a `.env` file in the server directory
-   - Add your Twitter API credentials:
+   - Add your API credentials:
    ```
+   # Twitter API Credentials
    TWITTER_API_KEY=your_api_key
    TWITTER_API_SECRET=your_api_secret
    TWITTER_ACCESS_TOKEN=your_access_token
    TWITTER_ACCESS_SECRET=your_access_secret
+
+   # OpenAI API
+   OPENAI_API_KEY=your_openai_api_key
+
+   # MongoDB
+   MONGODB_URI=your_mongodb_connection_string
+
+   # JWT
+   JWT_SECRET=your_jwt_secret
    ```
 
 ### Running the Application

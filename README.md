@@ -1,6 +1,13 @@
 # MCP Server Project
 
-This project consists of a client-server architecture with separate components for the server and client applications.
+This project consists of a client-server architecture with separate components for the server and client applications. The application features an AI-powered Twitter post creation system that helps users generate engaging and relevant content for their Twitter feed.
+
+## Features
+
+- AI-powered Twitter post generation
+- Client-server architecture for scalable deployment
+- Real-time content generation
+- User-friendly interface
 
 ## Project Structure
 
@@ -17,12 +24,13 @@ mcp-server/
 
 - Node.js (version 14 or higher recommended)
 - npm or yarn package manager
+- Twitter Developer Account (for API access)
 
 ### Installation
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/adityaAK47/ai-agent-X.git
 cd mcp-server
 ```
 
@@ -37,6 +45,18 @@ npm install
 cd ../client
 npm install
 ```
+
+### Configuration
+
+1. Set up your Twitter API credentials:
+   - Create a `.env` file in the server directory
+   - Add your Twitter API credentials:
+   ```
+   TWITTER_API_KEY=your_api_key
+   TWITTER_API_SECRET=your_api_secret
+   TWITTER_ACCESS_TOKEN=your_access_token
+   TWITTER_ACCESS_SECRET=your_access_secret
+   ```
 
 ### Running the Application
 
